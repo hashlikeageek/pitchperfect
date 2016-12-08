@@ -33,11 +33,15 @@ class ViewController: UIViewController {
         print("Record button Clicked")
         recordingInProgressText.text = "Recording In Progress"
         stopRecordingClicked.isEnabled = true
+        recordButtonClicked.isEnabled = false
     }
     
     @IBAction func stopRecording(_ sender: Any) {
         print("Stop Recording Hit")
-        recordButtonClicked.isEnabled = false
+        recordButtonClicked.isEnabled = true
+        stopRecordingClicked.isEnabled = false
+        recordingInProgressText.text = "Click To Record"
+        
     }
     
 
