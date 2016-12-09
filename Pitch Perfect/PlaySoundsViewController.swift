@@ -11,7 +11,7 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     
-    var recordedAudioURL: NSURL!
+    var recordedAudioURL: URL!
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
